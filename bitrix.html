@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yas" />
+    <meta name="description" content="" />
+    <title>Alex-Media</title>
+    <link href="{{ asset('assets/plugins/toasts/css/toast.css') }}" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico'" type="image/x-icon">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#"><img src="assets/img/logo-g.svg" alt="Логотип Alex-Media"></a>
+            </div>
+            <div class="header__nav">
+                <nav class="header__nav-menu">
+                    <ul class="header__nav-menu-list">
+                        <li class="header__nav-menu-item">
+                            <a href="index.html" class="header__nav-menu-link">Главная</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="development.html" class="header__nav-menu-link">Разработка</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="bitrix.html" class="header__nav-menu-link">Битрикс24</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">Портфолио</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">О студии</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__phone">
+                    <a class="header__phone-link" href="tel:+79158207000">
+                        +7 (915) 820 70 00
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                document.querySelector('.header').classList.add('header-sticky')
+                document.querySelector('.header__container').classList.add('header-container-sticky')
+            } else {
+                document.querySelector('.header').classList.remove('header-sticky')
+                document.querySelector('.header__container').classList.remove('header-container-sticky')
+            }
+        }
+    </script>
+    
+
+    <section class="first-screen-1">
+        <div class="container first-screen-top page-development">
+            <img class="polygon1" src="assets/img/Polygon2.svg" alt="">
+            <img class="polygon2" src="assets/img/Polygon3.svg" alt="">
+            <img class="polygon3" src="assets/img/Polygon4.svg" alt="">
+            <div class="screen-top-info">
+                <h1>Переведи свой бизнес на новый уровень</h1>
+                <ul>
+                    <li>Разрабатываем сайты под ключ</li>
+                    <li>Работаем с любым форматом, от лендинга до интернет-магазина</li>
+                    <li>Поддерживаем вас после запуска сайта</li>
+                </ul>
+                <a href="#form"><span>Оставить заявку</span></a>
+            </div>
+            <img class="screen-top-bitrix" src="assets/img/bitrix-screen-top.svg" alt="" >
+        </div>
+    </section>
+    <section id="stages-work" class="stages-work">
+        <div class="container stages-work-container">
+            <img class="polygon5" src="assets/img/Polygon5.svg" alt="">
+            <img class="polygon6" src="assets/img/Polygon6.svg" alt="">
+            <h2>Почему 1С-Битрикс</h2>
+            <div class="stages-work-info">
+                <div class="stages-work-info-item animate-left">
+                    <div class="work-info-item">
+                        <img src="assets/img/01.svg" alt="">
+                        <div class="work-info-item-info">
+                            <h3>Быстрый старт</h3>
+                            <p>Простое управление. Маркетплейс готовых решений. Удобный редактор лендингов. Помощь в выборе партнера-разработчика.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-right">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/02.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Безопасность</h3>
+                                <p>Целый ряд технических решений по обеспечению безопасности системы. Несколько уровней защиты от большинства атак.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-left">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/03.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Скорость и надежность</h3>
+                                <p>Собственная запатентованная технология для быстрой загрузки страниц. Поддержка «облачных» хранилищ. Распределение нагрузки между серверами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-right">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/04.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Интеграция с 1С</h3>
+                                <p>Двусторонний обмен данными вашего магазина с 1 С по товарам, заказам, покупателям и контрагентам. Обмен работает в режиме реального времени.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container partners__container">
+            <h2 class="partners__title">Нам доверяют</h2>
+            <div class="partners__list">
+                <img src="assets/img/bitrix.png" alt="" class="partners__img">
+                <img src="assets/img/yandex.png" alt="" class="partners__img">
+                <img src="assets/img/bitrix24.png" alt="" class="partners__img">
+                <img src="assets/img/beget.png" alt="" class="partners__img">
+            </div>
+        </div>
+    </section>
+    <section id="advantages" class="advantages">
+        <img class="polygon7" src="assets/img/Polygon7.svg" alt="">
+        <div class="container advantages-container">
+            <img class="polygon8" src="assets/img/Polygon8.svg" alt="">
+            <div class="advantages-info advantages-item animate-left">
+                <h2>Работать с нами легко и комфортно</h2>
+                <p>Мы делаем не просто сайты, а закрываем потребности ваших клиентов в вашем продукте</p>
+                <ul>
+                    <li>Помощь в составлении технического задания</li>
+                    <li>Индивидуальный дизайн</li>
+                    <li>Рукописный код без лишних скриптов</li>
+                    <li>Адаптивный дизайн под все форматы экранов и мобильную версию</li>
+                    <li>Настройка SEO</li>
+                </ul>
+            </div>
+            <div class="advantages-img advantages-item animate-right">
+                <img src="assets/img/bitrix-adv.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="prices">
+        <div class="container prices-container">
+            <h2>Цены на разработку</h2>
+            <div class="prices-list">
+                <div class="prices-item animate-left">
+                    <div class="prices-item-1">
+                        <h3>Landing Page</h3>
+                        <p>Создание одностраничного проекта на 1C-Битрикс с высокой конверсией и экспертным, продающим контентом.</p>
+                        <div class="button-price">
+                            <h4>от 30 000 &#8381</h4>
+                            <a href="#">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices-item animate-opasity">
+                    <div class="prices-item-2">
+                        <h3>Корпоративный сайт</h3>
+                        <p>Многостраничный сайт компании с программируемым функционалом для привлечения трафика и клиентов из интернета с помощью SEO-продвижения и контекстной рекламы.</p>
+                        <div class="button-price">
+                            <h4>от 40 000 &#8381</h4>
+                            <a href="#">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices-item animate-right">
+                    <div class="prices-item-3">
+                        <h3>Интернет-магазин</h3>
+                        <p>С современным, удобным для пользователей дизайном и поддержкой настройки сложных интеграций.</p>
+                        <div class="button-price">
+                            <h4>от 75 500 &#8381</h4>
+                            <a href="#">Выбрать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container portfolio-container">
+            <h2>Наши работы</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio1.jpg" alt=""></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio2.jpg" alt=""></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio3.jpg" alt=""></a>
+                </div>
+            </div>
+            <a class="portfolio-link" href="#">Смотреть остальные работы</a>
+        </div>
+    </section>
+    <section id="form" class="form">
+        <div class="container form-container">
+            <img src="assets/img/Polygon9.svg" alt="" class="polygon9">
+            <img src="assets/img/Polygon10.svg" alt="" class="polygon10">
+            <img src="assets/img/Polygon11.svg" alt="" class="polygon11">
+            <div class="form-block form-item animate-left">
+                <h2>Позвоним в удобное время</h2>
+                <!-- <img src="assets/img/Polygon9.svg" alt="" class="polygon9"> -->
+                <p>Заполните форму обратной связи и уточните время, когда удобно поговорить.</p>
+                <form id="formContacts" action="#" method="post">
+                    <div class="form-group">
+                        <input id="formInputName" type="text" placeholder="Ваше имя" required name="name" pattern="[А-Яа-яЁё]{2,14}">
+                    </div>
+                    <div class="form-group">
+                        <input id="formContactPhone" type="tel" placeholder="Телефон" required name="phone">
+                    </div>
+                    <div class="form-group">
+                        <button id="contactsButton">Оставить заявку</button>
+                    </div>
+                    <div id="errorInputForm" class="errorInputForm"></div>
+                </form>
+            </div>
+            <div class="questions form-item animate-right">
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Какой срок создания сайта?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Срок варьируется от 14 до 30 дней, в зависимости от сложности и скорости предоставления заказчиком информации.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Есть ли гарантия на разработку сайта?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>После того, как создание сайта выполнено, мы осуществляем гарантийную техническую поддержку, которая обеспечит эффективную работу вашего сайта.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>На кого будет зарегистрирован сайт?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Доменное имя и хостинг регистрируется на Вас или Вашу фирму.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Если мне не понравится дизайн?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Вы сможете предоставить нам больше пожеланий и информации и мы нарисуем новый!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container contacts-container">
+            <div class="contacts-info">
+                <h2>Свяжитесь с нами</h2>
+                <div class="contacts-info-concrete">
+                    <div class="phone-block">
+                        <p><span>Телефон </span> <a class="phone-link" href="tel:+79158207000">+7 (915) 820 70 00</a></p>
+                        <p><span> </span> <a class="phone-link" href="tel:+74932507000">+7 (4932) 50 70 00</a></p>
+                    </div>
+                    <p class="email-block"><span>E-mail</span> alex.media@bk.ru</p>
+                    <p class="from-block"><span>Адрес</span> г. Иваново, Комсомольская, 17</p>
+                    <p class="social-block"><span>Соц. сети</span> <a href="https://vk.com/alexmediagroup" target="_blank">ВКонтакте</a></p>
+                </div>
+                <div class="social-icon">
+                    <a href="https://vk.com/alexmediagroup" target="_blank">
+                        <img src="assets/img/la_vk.svg" alt="Группа Alex-Media в VK">
+                </a>
+                </div>
+            </div>
+
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A093b69462a6435b9adb0b0655dd3149cf74a1f6697c56576bc491885b4b8c1fa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-container-1">
+                <div class="logo">
+                    <div class="header__logo">
+                        <a href="#"><img src="assets/img/logo-g.svg" alt="Логотип Alex-Media"></a>
+                    </div>
+                </div>
+                <a href="#" class="politics">Политика конфедациальности</a>
+            </div>
+            <p class="copy">© 2022, Все права защищены</p>
+        </div>
+    </footer>
+    
+
+
+<!--  Модельное окно с вопросом от спама -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="text-question">Подтвердите что вы не робот. Ответьте на вопрос</p>
+        <p class="text-question-answer" id="modelQuestions"></p>
+        <div class="modal-form-block">
+            <input type="text" id="inputModal" required>
+            <button id="questionButton">Ответить</button>
+            <p class="errorAnswerQuestion"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="assets/plugins/toasts/js/toast.js"></script>
+<script src="assets/plugins/Inputmask/dist/inputmask.js"></script>
+<script src="assets/js/base.js"></script>
+<script src="assets/js/animate.js"></script>
+<script src="assets/js/antispam.js"></script>
+</body>
+</html>

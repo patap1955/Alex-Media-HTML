@@ -1,0 +1,227 @@
+.contacts {
+    margin-top: 50px;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    padding: 30px 25px;
+    background: linear-gradient(106.35deg, #FFFCF2 0%, #FFFDFA 100%, #FFFDFA 100%);
+    box-shadow: 5px 5px 20px rgba(210, 157, 30, 0.1);
+    border-radius: 30px;
+}
+
+.contacts-info {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contacts-info h2 {
+    font-size: 35px;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.contacts-info-concrete p span {
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.contacts-info-concrete p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.phone-block p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.phone-link {
+    text-decoration: none;
+    color: #03032C;
+    transition: color 0.3s ease;
+}
+
+.phone-link:hover {
+    color: #EF2555;
+}
+
+.phone-block, .email-block, .from-block {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    margin-top: 30px;
+}
+
+.social-icon img:not(:last-child) {
+    margin-right: 15px;
+}
+
+.map {
+    width: 55%;
+    height: 300px;
+}
+
+ymaps {
+    border-radius: 30px;
+}
+
+.footer {
+    margin-top: 35px;
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    background: #FFFFFF;
+    box-shadow: 5px 5px 20px rgba(30, 83, 210, 0.1);
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+.footer-container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.politics {
+    text-decoration: none;
+    color: #03032C;
+    transition: color 0.3s ease;
+}
+
+.politics:hover {
+    color: #EF2555;
+}
+
+.copy {
+    margin: 12px auto 0 auto;
+}
+
+.social-block a{
+    text-decoration: none;
+    color: #03032C;
+    transition: color 0.3s ease;
+}
+
+.social-block a:hover{
+    color: #EF2555;
+}
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1024px) {
+    .contacts-info h2 {
+        font-size: 24px;
+    }
+
+    .contacts-info-concrete p:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    .contacts-info-concrete p span {
+        font-size: 14px;
+        width: 22%;
+    }
+
+    .contacts-info-concrete p {
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 768px) {
+    .contacts {
+        margin-top: 25px;
+    }
+
+    .contacts-container {
+        flex-direction: column;
+    }
+
+    .contacts-info {
+        width: 100%;
+    }
+
+    .contacts-info h2 {
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .copy {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contacts-container {
+        border-radius: 0;
+        padding: 30px 0;
+    }
+
+    .contacts-info-concrete p {
+        padding: 0 25px;
+    }
+
+    .contacts-info-concrete p span {
+        width: 25%;
+    }
+
+    .social-icon {
+        padding: 0 25px;
+    }
+
+    .map {
+        height: 200px;
+    }
+
+    ymaps {
+        border-radius: 0;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
+    .footer-container {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 320px) {
+    .contacts-info h2 {
+        font-size: 18px;
+    }
+
+    .contacts-info-concrete p {
+        padding: 0 10px;
+        font-size: 11px;
+    }
+
+    .contacts-info-concrete p span {
+        font-size: 12px;
+        width: 33%;
+    }
+
+    .social-icon {
+        padding: 0 10px;
+    }
+}

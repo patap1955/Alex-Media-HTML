@@ -1,0 +1,63 @@
+.animate-left {
+    opacity: 0;
+    transform: translateX(-33vw);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-right {
+    opacity: 0;
+    transform: translateX(33vw);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-top {
+    opacity: 0;
+    transform: translateY(-25vw);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-bottom {
+    opacity: 0;
+    transform: translateY(15vw);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-opasity {
+    opacity: 0;
+    transition: opacity 2.3s  ease;
+}
+
+.animate-left.animate {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-right.animate {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-top.animate {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-bottom.animate {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 1.3s  ease, transform 1.3s ease ;
+}
+
+.animate-opasity.animate {
+    opacity: 1;
+    transition: opacity 2.3s  ease;
+}
+
+.portfolio-item.animate {
+    opacity: 1;
+    transform: translate(0);
+    transition: opacity 3.3s  ease, transform 1.3s ease ;
+}

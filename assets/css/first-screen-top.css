@@ -1,0 +1,268 @@
+.first-screen-1 {
+    position: relative;
+    margin-top: 35px;
+    z-index: 1;
+}
+
+.screen-top-img {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    z-index: 0;
+}
+
+.screen-top-bitrix {
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    z-index: 0;
+}
+
+.first-screen-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(106.35deg, #EFF5FF 0%, rgba(194, 219, 255, 0) 100%);
+    filter: drop-shadow(5px 5px 20px rgba(30, 83, 210, 0.1));
+    box-shadow: 5px 5px 20px rgba(30, 83, 210, 0.1);
+    border-radius: 30px;
+    padding: 127px 15px 120px 15px;
+}
+
+.first-screen-top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(106.35deg, #FEFFEF 0%, rgba(250, 255, 194, 0) 100%);
+    filter: drop-shadow(5px 5px 20px rgba(30, 83, 210, 0.1));
+    border-radius: 30px;
+    padding: 127px 15px 120px 15px;
+}
+
+.polygon1 {
+    position: absolute;
+    top: 0;
+    margin-left: -105px;
+
+}
+
+.polygon2 {
+    position: absolute;
+    bottom: 20px;
+    margin-top: 580px;
+    margin-left: 30px;
+    transform: rotate(80.43deg);
+}
+
+.polygon3 {
+    position: absolute;
+    top: 0;
+    overflow-x: hidden ;
+    margin-left: 1105px;
+    margin-top: -10px;
+
+}
+
+.screen-top-info {
+    position: relative;
+    z-index: 1;
+    
+}
+
+.screen-top-info h1 {
+    width: 68%;
+    position: relative;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+.screen-top-text {
+    width: 35%;
+    margin-bottom: 200px;
+}
+
+.screen-top-info ul {
+    margin-bottom: 40px;
+    width: 40%;
+}
+
+.screen-top-info ul li {
+    list-style-image: url("../img/circle.svg");
+    margin-left: 25px;
+    padding-inline-start: 1ch;
+}
+
+.screen-top-info ul li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.screen-top-info a {
+    display: flex;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.screen-top-info a span {
+    padding: 20px 40px;
+    background: linear-gradient(93.32deg, #EF2555  0%, #FF3767 100%);
+    box-shadow: 0px 0px 15px rgba(255, 66, 89, 0.5);
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.screen-top-info a span:hover {
+    background: linear-gradient(93.32deg, #E41245 0%, #F11C4F 100%);
+}
+
+@media (max-width: 1200px) {
+    .polygon1 {
+        left: 50px;
+    }
+
+    .polygon3 {
+        right: -30px;
+    }
+
+    .screen-top-img, .screen-top-bitrix {
+        width: 43vw;
+    }
+
+    .polygon2 {
+        display: none;
+    }
+
+    .animate-right {
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 1024px) {
+    .polygon1 {
+        width: 102px;
+    }
+
+    .polygon3 {
+        width: 92px;
+    }
+
+    .first-screen-top {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .screen-top-info h1 {
+        width: 80%;
+    }
+
+    .screen-top-info ul {
+        width: 50%;
+    }
+
+    .screen-top-info a {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .polygon1 {
+        left: 65px;
+        top: 85px;
+    }
+
+    .polygon3 {
+        right: -20px;
+        margin-top: -35px;
+    }
+
+    .first-screen-1 {
+        margin-top: 15px;
+    }
+
+    .first-screen-top {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .screen-top-info h1 {
+        width: 100%;
+        font-size: 45px;
+    }
+
+    .screen-top-text {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .screen-top-info ul {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .screen-top-img, .screen-top-bitrix {
+        position: relative;
+        width: 50vw;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .screen-top-info h1 {
+        text-align: center;
+    }
+
+    .screen-top-info a {
+        justify-content: center;
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .polygon1 {
+        left: 55px;
+        top: 65px;
+    }
+
+    .polygon3 {
+        right: -35px;
+        margin-top: -30px;
+    }
+
+    .screen-top-info h1 {
+        font-size: 35px;
+    }
+
+    .screen-top-info ul {
+        width: 100%;
+    }
+
+    .first-screen-top {
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .screen-top-info {
+        position: relative;
+    }
+
+    .screen-top-img img {
+        width: 85vw;
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .first-screen-top {
+        padding: 15px 12px;
+    }
+
+    .screen-top-info a span {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,109 @@
+.destroy-fears {
+    margin-top: 70px;
+}
+
+.destroy-fears__title {
+    position: relative;
+    text-align: center;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    color: #03032C;
+}
+
+.destroy-fears__list {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+
+.destroy-fears__list-left {
+    position: relative;
+    z-index: 2;
+    padding: 40px 30px;
+    background: linear-gradient(141.57deg, #F6FFF1 0%, #FDFFFD 100%);
+    box-shadow: 5px 5px 20px rgba(30, 83, 210, 0.1);
+    border-radius: 30px;
+}
+
+.destroy-fears__list-right {
+    position: relative;
+    z-index: 2;
+    padding: 40px 30px;
+    background: linear-gradient(141.57deg, #FFF1FA 0%, #FFFDFE 100%);
+    box-shadow: 5px 5px 20px rgba(30, 83, 210, 0.1);
+    border-radius: 30px;
+}
+
+.destroy-fears__list-title {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    color: #03032C;
+}
+
+.destroy-fears__item-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.destroy-fears__item-title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 25px;
+    color: #03032C;
+}
+
+.destroy-fears__item-text {
+    font-size: 16px;
+    line-height: 25px;
+    color: #03032C;
+}
+
+.destroy-fears_item-icon {
+    display: inline-block;
+    margin-right: 10px;
+    width: 15px;
+    height: 17px;
+    background-image: url('../img/destroy-fears-item-icon.svg');
+    background-size: cover;
+}
+
+.polygon14 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.polygon15 {
+    position: absolute;
+    bottom: -45px;
+    right: 47%;
+}
+
+.polygon16 {
+    position: absolute;
+    bottom: 45px;
+    left: -75px;
+}
+
+@media (max-width: 768px) {
+    .destroy-fears__list {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width: 320px) {
+
+}

@@ -1,0 +1,131 @@
+.stages-work {
+    margin-top: 50px;
+}
+
+.stages-work-container {
+    background: linear-gradient(106.35deg, #F6FFFD 0%, #FFFFFF 100%);
+    box-shadow: 5px 5px 20px rgba(30, 200, 210, 0.1);
+    border-radius: 30px;
+    margin-top: 60px;
+    padding: 10px 15px 50px 15px;
+}
+
+.polygon5 {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 1070px;
+}
+
+.polygon6 {
+    position: absolute;
+    margin-top: 330px;
+    margin-left: 1135px;
+    transform: rotate(74.43deg);
+}
+
+.stages-work-container h2 {
+    font-size: 35px;
+    font-weight: 900;
+    padding: 40px 0;
+}
+
+.stages-work-info {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.stages-work-info-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.work-info-item {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 85px auto;
+}
+
+.work-info-item-info h3 {
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 1200px) {
+    .polygon5 {
+        right: -25px;
+    }
+
+    .polygon6 {
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .stages-work-info {
+        gap: 30px;
+    }
+
+    .work-info-item-info h3 {
+        font-size: 18px;
+    }
+
+    .stages-work-container {
+        padding: 0 25px 30px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stages-work {
+        margin-top: 25px;
+    }
+
+    .polygon5 {
+        width: 103px;
+        right: -25px;
+    }
+
+    .stages-work-container {
+        border-radius: 0;
+    }
+
+    .stages-work-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .stages-work-container h2 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stages-work-container h2 {
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 320px) {
+    .stages-work-container {
+        padding: 0 10px 30px 10px;
+    }
+
+    .stages-work-container h2 {
+        font-size: 20px;
+    }
+
+    .work-info-item {
+        grid-template-columns: 15% auto;
+    }
+
+    .work-info-item img {
+        width: 28px;
+    }
+
+    .work-info-item-info h3 {
+        font-size: 14px;
+    }
+}

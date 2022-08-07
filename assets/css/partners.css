@@ -1,0 +1,38 @@
+.partners {
+    margin-top: 70px;
+}
+
+.partners__title {
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    color: #03032C;
+}
+
+.partners__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.partners__img {
+    width: 100%;
+}
+
+@media (max-width: 1200px) {
+    /* .partners__img {
+        width: 20vw;
+    } */
+}
+
+@media (max-width: 768px) {
+    .partners__img {
+        width: 100%;
+    }
+
+    .partners__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

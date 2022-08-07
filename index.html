@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yas" />
+    <meta name="description" content="" />
+    <title>Alex-Media</title>
+    <link href="{{ asset('assets/plugins/toasts/css/toast.css') }}" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico'" type="image/x-icon">
+
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <a href="#"><img src="assets/img/logo-g.svg" alt="Логотип Alex-Media"></a>
+            </div>
+            <div class="header__nav">
+                <nav class="header__nav-menu">
+                    <ul class="header__nav-menu-list">
+                        <li class="header__nav-menu-item">
+                            <a href="index.html" class="header__nav-menu-link">Главная</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="development.html" class="header__nav-menu-link">Разработка</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="bitrix.html" class="header__nav-menu-link">Битрикс24</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">Портфолио</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">О студии</a>
+                        </li>
+                        <li class="header__nav-menu-item">
+                            <a href="#" class="header__nav-menu-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__phone">
+                    <a class="header__phone-link" href="tel:+79158207000">
+                        +7 (915) 820 70 00
+                    </a>
+                </div>
+            </div>
+            
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+    <script>
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                document.querySelector('.header').classList.add('header-sticky')
+                document.querySelector('.header__container').classList.add('header-container-sticky')
+            } else {
+                document.querySelector('.header').classList.remove('header-sticky')
+                document.querySelector('.header__container').classList.remove('header-container-sticky')
+            }
+        }
+    </script>
+    
+
+    <section class="first-screen-1">
+        <div class="container first-screen-top page-development">
+            <img class="polygon1" src="assets/img/Polygon2.svg" alt="">
+            <img class="polygon2" src="assets/img/Polygon3.svg" alt="">
+            <img class="polygon3" src="assets/img/Polygon4.svg" alt="">
+            <div class="screen-top-info">
+                <h1>Стань заметнее конкурентов!</h1>
+                <p class="screen-top-text">Наши сайты приводят клиентов и помогают вашему бизнесу развиваться</p>
+                <a href="#form"><span>Оставить заявку</span></a>
+            </div>
+            <img class="screen-top-img" src="assets/img/lf20_w98qte06.json].svg" alt="" >
+        </div>
+    </section>
+    <section id="first-screen-2" class="first-screen-2">
+        <div class="container first-screen-bottom">
+            <div class="screen-bottom-item animate-left">
+                <h2>Разработка</h2>
+                <p>Создание сайтов любой сложности с уникальным дизайном под Ваши цели</p>
+            </div>
+            <div class="screen-bottom-item animate-opasity">
+                <h2>Поддержка</h2>
+                <p>Постоянная поддержка сайтов для их бесперебойной работы</p>
+            </div>
+            <div class="screen-bottom-item animate-right">
+                <h2>Продвижение</h2>
+                <p>Раскрутка сайтов в поисковых системах Яндекс и Google</p>
+            </div>
+            <img class="polygon4" src="assets/img/Polygon1.svg" alt="">
+        </div>
+    </section>
+    
+
+
+    <!-- content -->
+    <section id="about-as" class="about-as">
+        <div class="container about-as-container">
+            <div class="about-as-info about-as-item animate-left">
+                <h2>О нас</h2>
+                <p>Веб-студия ALEX MEDIA работает с 2016 года и наши сотрудники — это испытанные профессионалы, которые обладают богатым опытом создания сайтов и разработки стратегий рекламных кампаний.</p>
+                <p>Мы создаем не просто сайты, а лицо и имидж, которые отражают уникальность каждой компании.</p>
+                <div class="about-as-info2">
+                    <div class="about-as-info2-item">
+                        <h3>85%</h3>
+                        <p>клиентов в интернете</p>
+                    </div>
+                    <div class="about-as-info2-item">
+                        <h3>90%</h3>
+                        <p>покупают</p>
+                    </div>
+                    <div class="about-as-info2-item">
+                        <h3>6 лет</h3>
+                        <p>на рынке</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-as-img about-as-item animate-right">
+                <img src="assets/img/lf20_wzrthmvn.json].svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="stages-work" class="stages-work">
+        <div class="container stages-work-container">
+            <img class="polygon5" src="assets/img/Polygon5.svg" alt="">
+            <img class="polygon6" src="assets/img/Polygon6.svg" alt="">
+            <h2>Почему именно мы</h2>
+            <div class="stages-work-info">
+                <div class="stages-work-info-item animate-left">
+                    <div class="work-info-item">
+                        <img src="assets/img/01.svg" alt="">
+                        <div class="work-info-item-info">
+                            <h3>Опытная команда</h3>
+                            <p>Наша команда сложилась давно, работает быстро и с удовольствием</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-right">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/02.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Мы - надежный партнер</h3>
+                                <p>Мы всегда доводим дело до конца и не бросаем заказчиков с нерешенной проблемой или задачей</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-left">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/03.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Высокое качество работы</h3>
+                                <p>Большинство клиентов к нам приходят по рекомендации.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stages-work-info-item animate-right">
+                    <div class="stages-work-info-item">
+                        <div class="work-info-item">
+                            <img src="assets/img/04.svg" alt="">
+                            <div class="work-info-item-info">
+                                <h3>Для нас нет невозможного</h3>
+                                <p>Мы находим решения для бизнес-задач любой сложности и работаем на результат</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destroy-fears">
+        <div class="container">
+            <h2 class="destroy-fears__title">Мы разрушим ваши страхи</h2>
+            <div class="destroy-fears__list">
+                <img src="assets/img/Polygon14.svg" alt="" class="polygon14">
+                <img src="assets/img/Polygon15.svg" alt="" class="polygon15">
+                <img src="assets/img/Polygon16.svg" alt="" class="polygon16">
+                <div class="destroy-fears__list-left">
+                    <h3 class="destroy-fears__list-title">Работа с веб-студией</h3>
+                    <div class="destroy-fears__item-list">
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span> Высокое качество</h3>
+                            <p class="destroy-fears__item-text">Веб-студия всегда отвечает за качество выполненных работ, а свои созданные проекты они демонстрируют в портфолио.
+                            </p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Выполненные сроки</h3>
+                            <p class="destroy-fears__item-text">Все этапы работ выполняются в сроки, независимо от обстоятельств. </p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Всегда на связи</h3>
+                            <p class="destroy-fears__item-text">Специалисты веб-студии заинтересованы в вашей удовлетворённости их работой, и отличаются быстрым откликом на все ваши требования.
+                            </p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Гарантия</h3>
+                            <p class="destroy-fears__item-text">Благодаря заключенному договору вы можете не волноваться за свой проект, ведь договор — это ваши гарантии.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="destroy-fears__list-right">
+                    <h3 class="destroy-fears__list-title">Работа с фрилансером</h3>
+                    <div class="destroy-fears__item-list">
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Низкое качество</h3>
+                            <p class="destroy-fears__item-text">Качество не всегда соответствует высокому уровню, и часто проект требует доработок.
+                            </p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Частый срыв сроков</h3>
+                            <p class="destroy-fears__item-text">Не всегда реальные сроки выполнения работ будут соответствовать заявленным.</p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Ненадежность</h3>
+                            <p class="destroy-fears__item-text">Из-за заниженной цены фрилансер вынужден набирать больше заказов, что отражается на времени реагирования на ваши вопросы, и может грозить простоями.
+                            </p>
+                        </div>
+                        <div class="destroy-fears__item">
+                            <h3 class="destroy-fears__item-title"><span class="destroy-fears_item-icon"></span>Нет гарантии</h3>
+                            <p class="destroy-fears__item-text">У вас нет никаких гарантий, подтверждённых официальным документом. А все поправки будут выполняться за дополнительную плату.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partners">
+        <div class="container partners__container">
+            <h2 class="partners__title">Мы официальные парнеты</h2>
+            <div class="partners__list">
+                <img src="assets/img/bitrix.png" alt="" class="partners__img">
+                <img src="assets/img/yandex.png" alt="" class="partners__img">
+                <img src="assets/img/bitrix24.png" alt="" class="partners__img">
+                <img src="assets/img/beget.png" alt="" class="partners__img">
+            </div>
+        </div>
+    </section>
+    <section id="prices" class="prices">
+        <div class="container prices-container">
+            <h2>Цены на разработку</h2>
+            <div class="prices-list">
+                <div class="prices-item animate-left">
+                    <div class="prices-item-1">
+                        <h3>Разработка сайтов</h3>
+                        <ul>
+                            <li>Landing Page</li>
+                            <li>Корпоративный сайт</li>
+                            <li>Сайт на 1C-Bitrix</li>
+                        </ul>
+                        <div class="button-price">
+                            <a class="prices-item__button" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices-item animate-opasity">
+                    <div class="prices-item-2">
+                        <h3>Продвижение</h3>
+                        <ul>
+                            <li>Контекстная реклама</li>
+                            <li>Таргетированная реклама</li>
+                            <li>SEO</li>
+                        </ul>
+                        <div class="button-price">
+                            <a class="prices-item__button" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices-item animate-right">
+                    <div class="prices-item-3">
+                        <h3>Внедрение CRM</h3>
+                        <ul>
+                            <li>Интеграция Битрикс24</li>
+                            <li>Организация работы компании</li>
+                            <li>Автоматизация продажи</li>
+                        </ul>
+                        <div class="button-price">
+                            <a class="prices-item__button" href="#">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="portfolio">
+        <div class="container portfolio-container">
+            <h2>Наши работы</h2>
+            <div class="portfolio-list">
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio1.jpg" alt=""></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio2.jpg" alt=""></a>
+                </div>
+                <div class="portfolio-item">
+                    <a href="#"><img src="assets/img/portfolio3.jpg" alt=""></a>
+                </div>
+            </div>
+            <a class="portfolio-link" href="#">Смотреть остальные работы</a>
+        </div>
+    </section>
+    <section id="form" class="form">
+        <div class="container form-container">
+            <img src="assets/img/Polygon9.svg" alt="" class="polygon9">
+            <img src="assets/img/Polygon10.svg" alt="" class="polygon10">
+            <img src="assets/img/Polygon11.svg" alt="" class="polygon11">
+            <div class="form-block form-item animate-left">
+                <h2>Позвоним в удобное время</h2>
+                <!-- <img src="assets/img/Polygon9.svg" alt="" class="polygon9"> -->
+                <p>Заполните форму обратной связи и уточните время, когда удобно поговорить.</p>
+                <form id="formContacts" action="#" method="post">
+                    <div class="form-group">
+                        <input id="formInputName" type="text" placeholder="Ваше имя" required name="name" pattern="[А-Яа-яЁё]{2,14}">
+                    </div>
+                    <div class="form-group">
+                        <input id="formContactPhone" type="tel" placeholder="Телефон" required name="phone">
+                    </div>
+                    <div class="form-group">
+                        <button id="contactsButton">Оставить заявку</button>
+                    </div>
+                    <div id="errorInputForm" class="errorInputForm"></div>
+                </form>
+            </div>
+            <div class="questions form-item animate-right">
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Какой срок создания сайта?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Срок варьируется от 14 до 30 дней, в зависимости от сложности и скорости предоставления заказчиком информации.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Есть ли гарантия на разработку сайта?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>После того, как создание сайта выполнено, мы осуществляем гарантийную техническую поддержку, которая обеспечит эффективную работу вашего сайта.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>На кого будет зарегистрирован сайт?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Доменное имя и хостинг регистрируется на Вас или Вашу фирму.</p>
+                    </div>
+                </div>
+                <div class="questions-item">
+                    <div class="question_accordion">
+                        <h4>Если мне не понравится дизайн?</h4>
+                    </div>
+                    <div class="question_panel">
+                        <p>Вы сможете предоставить нам больше пожеланий и информации и мы нарисуем новый!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container contacts-container">
+            <div class="contacts-info">
+                <h2>Свяжитесь с нами</h2>
+                <div class="contacts-info-concrete">
+                    <div class="phone-block">
+                        <p><span>Телефон </span> <a class="phone-link" href="tel:+79158207000">+7 (915) 820 70 00</a></p>
+                        <p><span> </span> <a class="phone-link" href="tel:+74932507000">+7 (4932) 50 70 00</a></p>
+                    </div>
+                    <p class="email-block"><span>E-mail</span> alex.media@bk.ru</p>
+                    <p class="from-block"><span>Адрес</span> г. Иваново, Комсомольская, 17</p>
+                    <p class="social-block"><span>Соц. сети</span> <a href="https://vk.com/alexmediagroup" target="_blank">ВКонтакте</a></p>
+                </div>
+                <div class="social-icon">
+                    <a href="https://vk.com/alexmediagroup" target="_blank">
+                        <img src="assets/img/la_vk.svg" alt="Группа Alex-Media в VK">
+                </a>
+                </div>
+            </div>
+
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A093b69462a6435b9adb0b0655dd3149cf74a1f6697c56576bc491885b4b8c1fa&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-container-1">
+                <div class="logo">
+                    <div class="header__logo">
+                        <a href="#"><img src="assets/img/logo-g.svg" alt="Логотип Alex-Media"></a>
+                    </div>
+                </div>
+                <a href="#" class="politics">Политика конфедациальности</a>
+            </div>
+            <p class="copy">© 2022, Все права защищены</p>
+        </div>
+    </footer>
+    
+
+
+<!--  Модельное окно с вопросом от спама -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p class="text-question">Подтвердите что вы не робот. Ответьте на вопрос</p>
+        <p class="text-question-answer" id="modelQuestions"></p>
+        <div class="modal-form-block">
+            <input type="text" id="inputModal" required>
+            <button id="questionButton">Ответить</button>
+            <p class="errorAnswerQuestion"></p>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="assets/plugins/toasts/js/toast.js"></script>
+<script src="assets/plugins/Inputmask/dist/inputmask.js"></script>
+<script src="assets/js/base.js"></script>
+<script src="assets/js/animate.js"></script>
+<script src="assets/js/antispam.js"></script>
+</body>
+</html>
