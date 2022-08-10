@@ -40,11 +40,11 @@
     text-decoration: none;
     margin: 50px auto 0 auto;
     padding: 10px 30px;
-    border: 2px solid #FF4259;
+    border: 1px solid #FF4259;
     border-radius: 30px;
     font-size: 20px;
     font-weight: 900;
-    color: #03032C;
+    color: #FF4259;
 }
 
 .portfolio-link:hover {

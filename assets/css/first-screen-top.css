@@ -23,6 +23,8 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    /* background: linear-gradient(106.35deg, #EFF5FF 0%, rgba(194, 219, 255, 0) 100%);
+    filter: drop-shadow(5px 5px 20px rgba(30, 83, 210, 0.1)); */
     background: linear-gradient(106.35deg, #EFF5FF 0%, rgba(194, 219, 255, 0) 100%);
     filter: drop-shadow(5px 5px 20px rgba(30, 83, 210, 0.1));
     box-shadow: 5px 5px 20px rgba(30, 83, 210, 0.1);
@@ -30,15 +32,9 @@
     padding: 127px 15px 120px 15px;
 }
 
-.first-screen-top {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.page-bitrix {
     background: linear-gradient(106.35deg, #FEFFEF 0%, rgba(250, 255, 194, 0) 100%);
     filter: drop-shadow(5px 5px 20px rgba(30, 83, 210, 0.1));
-    border-radius: 30px;
-    padding: 127px 15px 120px 15px;
 }
 
 .polygon1 {
